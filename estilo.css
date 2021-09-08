@@ -131,8 +131,9 @@ nav {
 
 
 #opsMenu {
-	padding-top: 30px;
-	font-size: 10px;
+	padding-top: 60px;
+	padding-bottom: 30px;
+	font-size: 25px;
 	text-transform: uppercase;
 	z-index: 9999;
 }
@@ -153,7 +154,7 @@ nav {
 #opsMenu li  ul{
 	display:none;
 	color: #fff;
-	font-size: 5px;
+	font-size: 15px;
 	list-style: none;
 }
 
@@ -163,7 +164,7 @@ nav {
 
 #fecharMenu {
 	float: right;
-	margin: 25px 20px 0 0 ;
+	margin: 20px 25px 0 0 ;
 	color: #fff;
 	background: transparent;
 	border: none;

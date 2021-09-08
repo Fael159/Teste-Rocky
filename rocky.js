@@ -65,6 +65,44 @@ function scrollToPosition(to) {
 }
 
 
+
+// Função de rolagem do Scroll
+
+const menuItensMobile = document.querySelectorAll('#opsMenu a[href^="#"]')
+
+menuItensMobile.forEach(itemMobile => {
+	itemMobile.addEventListener('click', scrollToIdOnClickMobile)
+}
+)
+
+
+// Função Faz referencia entre Href e o Item
+
+function getScrollToByHrefMoblile(elementMobile) {
+	const idMobile = elementMobile.getAttribute('href')
+	return document.querySelector(idMobile).offsetTop
+}
+
+// Função para manipular o click
+
+function scrollToIdOnClickMobile(eventMobile) {
+	eventMobile.preventDefault()
+	const toMobile = getScrollToByHref(event.target) - 150
+
+	scrollToPosition(toMobile)
+	
+}
+
+// Função para rolar o scroll suave
+
+function scrollToPositionMobile(toMobile) {
+	window.scroll({
+		top: toMobile,
+		behavior: "smooth",
+	})
+}
+
+
 // Função salvar dados das mensagen
 
 class Mensagens {

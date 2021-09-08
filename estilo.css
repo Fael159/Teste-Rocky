@@ -1,0 +1,1857 @@
+/* Estrutura do Site */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Montserrat;
+}
+
+
+
+body {
+	max-height: 5355px;
+	max-width: 1920px;
+	width: 100%;
+	background: url(img/web/bg.png) no-repeat center;
+	margin: 0 auto;
+}
+
+
+a:link, a:active, a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+h1{
+	font-size: 60px;
+}
+
+
+/* Estrutura do Topo */
+
+header {
+	height: 1080px;
+	max-width: 1920px;
+	width: 100%;
+	background-color: #000;
+	background: transparent url(img/web/s1_ft1.png) no-repeat;
+	background-position: center;
+	box-sizing: border-box;
+	display: flex;
+  justify-content: center;
+}
+
+nav {
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	height: 112px;
+	width: 100%;
+	max-width: 1920px;
+	border: 1px solid rgba(112, 112, 112, 0);
+	background-color: rgba(0, 0, 0, 0.5);
+	box-sizing: border-box;
+	z-index: 1;
+}
+
+
+/* Estrutura do Logo */
+
+#logo a{
+	float: left;
+	width: 228px;
+	height: 57px;
+	margin-left: 140px;
+	margin-top: 28px;
+	text-indent: -90000px;
+	background: url(img/web/logo.png) no-repeat;
+	opacity: 1;
+	
+
+}
+
+
+/* Estrutura do Menu */
+
+
+#menu {
+	float: right;
+	width: 1070px;
+	height: 24px;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin-right: 140px;
+	padding-top: 45px;
+	box-sizing: border-box;
+	text-align: center;
+
+}
+
+
+#menu a{
+	margin-left: 10px;
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 0px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	opacity: 1;
+
+
+}
+
+#menu a:hover {
+	color: rgba(28, 212, 233, 1);
+}
+
+
+/* Estrutura do Menu Mobile */
+
+
+#btnMobile {
+	display: none;
+	color: #fff;
+	background-color: transparent;
+	border: transparent;
+  margin-left: 15px;
+}
+
+#menuMobile {
+	display: none;
+	position: absolute;
+	background: rgba(129, 129, 129, 0.96);
+	width: 50%;
+	min-height: 200px;
+	text-align: center;
+	border-radius: 0 20px 20px 0;
+}
+
+
+#opsMenu {
+	padding-top: 30px;
+	font-size: 10px;
+	text-transform: uppercase;
+	z-index: 9999;
+}
+
+#opsMenu li {
+	padding: 15px 0;
+}
+
+#opsMenu li a{
+	padding: 10px auto;
+}
+
+#opsMenu li ul li {
+	margin-top: 5px;
+	padding: 5px 0 ;
+}
+
+#opsMenu li  ul{
+	display:none;
+	color: #fff;
+	font-size: 5px;
+	list-style: none;
+}
+
+#opsMenu li:hover ul, .menu li.over ul{
+	display:block;
+}
+
+#fecharMenu {
+	float: right;
+	margin: 25px 20px 0 0 ;
+	color: #fff;
+	background: transparent;
+	border: none;
+}
+
+#nav.active #menuMobile{
+		display: block;
+		position: absolute;
+
+}
+
+#menuMobile hr{
+	width: 70%;
+	margin: auto;
+}
+
+
+/* Estrutura dos Textos do Topo */
+
+#tituloTopo {
+	font-size:141px;
+	position: absolute;
+	font-weight: 800;
+	height: 369px;
+	width: 1920px;
+	margin: 333px auto 0 auto;
+	text-align: center;
+	color: #FFF;
+	box-sizing: border-box;
+	opacity: 1;
+	
+	
+}
+
+
+#textoTopo {
+	position: absolute;
+	max-width: 884px;
+	height: 66px;
+	width: 100%;
+	margin: 797px 518px 0px 518px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	font-weight: 500;
+
+}
+
+.quebraLinha {
+	display: none;
+}
+
+.yellow {
+	color: #EFE60B;
+}
+
+
+
+/* Estrutura do Botão Entre em contato */
+
+#botaoTopo {
+	position: absolute;
+	max-width: 350px;
+	width: 100%;
+	max-height: 83px;
+	margin: 959px 785px 38px 785px;
+	padding: 30px 25px 29px 25px;
+	background: rgba(28, 212, 233, 1);
+	border-radius: 42px;
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+
+#botaoTopo:hover {
+	color: rgba(28, 212, 233, 1);
+	background: #fff;
+}
+
+
+/* Estrutura Sobre a Rocky */
+
+
+#sobre {
+	margin-top: 83px;
+	margin-left: 140px;
+	max-width: 1211px;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+
+
+#fundoSobre{
+	width: 100%;
+	height: 100%;
+	margin-top: 130px;
+	background-color: #fff;
+	box-shadow: 0px 0px 30px #0000004D;
+	box-sizing: border-box;
+	}
+
+
+#textoSobre {
+	width: 100%;
+	min-height: 516px;
+	height: 100%;
+	padding: 48px 46px;
+	font-size: 20px;
+	line-height: 30px;
+	display: flex;
+	flex-direction: column;
+	flex-flow: wrap;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+
+.espaco{
+	padding-bottom: 27px;
+}
+
+.negrito {
+	font-weight: bold;
+}
+
+/* Estrutura Sobre a Rocky Mobile */
+
+#textoSobreMobile {
+	display: none;
+}
+
+
+/* Estrutura Serviços */
+
+
+#servicos {
+	max-width: 1640px;
+	height: 100%;
+	margin: 200px auto 0 auto;
+	box-sizing: border-box;
+}
+
+
+#retanduloServico {
+	width: 100%;
+	height: 100%;
+	margin-top: 130PX;
+	display: flex;
+	justify-content: space-between;
+	flex-flow:row wrap;
+	text-align: center;
+}
+
+
+
+.caixaServico {
+	position: relative;
+	width: 514px;
+	height: 648px;
+	border-radius: 33px;
+	margin: auto auto;
+	box-sizing: border-box;
+	background-color: rgba(0, 0, 0, 1);
+	box-shadow: 0px 3px 15px #0000001A;
+	display: flex;
+	flex-flow:row wrap;
+	justify-content: center;
+}
+
+
+.caixaServico h1{
+	position: absolute;
+	font-size: 30px;
+	color: #EFE60B;
+	z-index: 1;
+}
+
+
+#caixaServico1 {
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/web/s3_ft1.png) no-repeat center;
+}
+
+#caixaServico2 {
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/web/s3_ft2.png) no-repeat center;
+}
+
+#caixaServico3 {
+	background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/web/s3_ft3.png) no-repeat center;
+}
+
+
+#caixaServico1 h1{
+	margin-top: 45px;
+}
+
+
+#caixaServico2 h1{
+	margin-top: 50px;
+}
+
+#caixaServico3 h1{
+	margin-top: 52px;
+}
+
+
+.textosServico1 {
+	position: absolute;
+	top: 157px;
+	max-width: 397px;
+	max-height: 180px;
+	font-size: 25px;
+	margin: 0px 52px 0px 62px;
+	color: #fff;
+	font-weight: 500;
+	z-index: 1;
+}
+
+.textosServico2 {
+	position: absolute;
+	top: 387px;
+	max-width: 397px;
+	max-height: 180px;
+	font-size: 25px;
+	margin: 0px 52px 0px 62px;
+	color: #fff;
+	font-weight: 500;
+	z-index: 1;
+}
+
+
+
+
+/* Estrutura Diferenciais */
+
+#diferenciais {
+	max-width: 1635px;
+	height: 100%;
+	margin: 200px auto 0 auto;
+	box-sizing: border-box;
+}
+
+#retanduloDiferenciais {
+	width: 100%;
+	height: 100%;
+	margin-top: 130px;
+	display: flex;
+	justify-content: space-between;
+	flex-flow:row wrap;
+	text-align: center;
+}
+
+.caixaDiferenciais {
+	position: relative;
+	width: 389px;
+	height: 670px;
+	border-radius: 51px;
+	box-sizing: border-box;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.16);
+	display: flex;
+	justify-content: center;
+}
+
+#caixaDiferenciais1 {
+	background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/web/s4_ft1.png) no-repeat center;
+	background-position-y: -18px;
+}
+
+#caixaDiferenciais2 {
+	background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/web/s4_ft2.png) no-repeat center;
+	background-position-y: -18px;
+}
+
+#caixaDiferenciais3 {
+	background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/web/s4_ft3.png) no-repeat center;
+	background-position-y: -18px;
+}
+
+
+.medal {
+	position: absolute;
+	color: #fff;
+	z-index: 1;
+	top: 80px;
+	font-size: 9em;
+	box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.16);
+	}
+
+.textoDiferenciais {
+	position: absolute;
+	top: 311px;
+	width: 260px;
+	height: 274px;
+	color: #fff;
+	z-index: 1;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+
+
+/* Estrutura Roda pé */
+
+.faixa {
+	max-width: 1920px;
+	width: 100%;
+	height: 83px;
+	background-color: #EFE60B;
+}
+
+#faixa1 {
+	margin-top: 95px;
+}
+
+/* Estrutura Informaçoes de contato */
+
+#contato {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: wrap;
+	box-sizing: border-box;
+	background-color: #000000E6;
+	color: #fff;
+}
+
+
+#info {
+	max-width: 572px;
+	height: 785px;
+	margin-top: 75px;
+	font-size: 20px;
+}
+
+
+
+#infoContato {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 45px;
+	text-align:center;
+}
+
+#infoSocial {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 15px;
+}
+
+
+#logoWeb {
+	margin-right: 100px;
+}
+
+
+#logoMobile {
+	display: none;
+	width: 50%;
+}
+
+.iconeSocial {
+	font-size: 3em;
+}
+
+#infoContato span{
+	margin-left: 25px;
+}
+
+#localizacao {
+	display: flex;
+	align-items: center;
+	max-width: 470px;
+	height: 35px;
+	margin-top: 40px;
+	font-size: 12px;
+}
+
+#endereco {
+	max-width: 420px;
+	height: 100%;
+	margin-left: 35px;
+}
+
+
+#textoInfo {
+	width: 572px;
+	height: 504px;
+	margin-top: 80px;
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.blue {
+	color: #1CD4E9;
+}
+
+
+#textoInfoMobile {
+	display: none;
+}
+
+
+/* Estrutura Enviar Mensagem */
+
+#mensagem {
+	max-width: 681px;
+	width: 100%;
+	height: 775px;
+	margin-top: 83px;
+	margin-bottom: 82px;
+	background-color: #818181;
+}
+
+
+#mensagem form{
+	max-width: 621px;
+	height: 578px;
+	margin: 30px;
+}
+
+#mensagem input{
+	width: 100%;
+	height: 76px;
+	font-size: 30px;
+	padding-left: 19px;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+}
+
+#mensagem textarea{
+	width: 100%;
+	height: 200px;
+	font-size: 30px;
+	padding-top: 20px;
+	padding-left: 19px;
+	margin-bottom: 60px;
+	box-sizing: border-box;
+	
+
+}
+
+::placeholder {
+  color: #D1D1D1;
+ 
+}
+
+
+
+#botaoMensagem {
+	text-align: center;
+	border: none;
+	background-color: #1CD4E9;
+	max-width: 621px;
+	width: 100%;
+	height: 77px;
+	font-size: 29px;
+	font-weight: bold;
+	color: #fff;
+}
+
+#botaoMensagem:hover {
+	color: rgba(28, 212, 233, 1);
+	background: #fff;
+}
+
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+	body {
+		background: none;
+	}
+
+	h1 {
+    font-size: 30px;
+	}
+
+
+	/* Estrutura do Topo */
+
+	header {
+		background-size: cover;
+		height: 812px;
+	}
+
+
+	nav {
+		height: auto;
+	}
+
+	
+	/* Estrutura do Logo */
+	#logo a{
+		background: url(img/mobile/logo.png) no-repeat;
+	  width: 112px;
+    height: 27px;
+    margin: 20px 123px 15px 50px;
+	}
+
+
+	/* Estrutura do Menu */
+	#menu {
+		display: none;
+	}
+
+	/* Estrutura do Menu Mobile */
+
+	#btnMobile {
+		display: block;
+	}
+
+
+	/* Estrutura do Menu */
+	#tituloTopo {
+		font-size: 35px;
+		margin-top: 200px;
+		height: auto;
+		width: 100%;
+	}
+
+	/* Estrutura dos Textos do Topo */
+	#textoTopo {
+		font-size: 12px;
+		height: auto;
+		margin-top: 385px;
+		font-weight: normal;
+	}
+
+
+	.quebraLinha {
+		display: inline-block;
+	}
+
+
+	/* Estrutura do Botão Entre em Contato */
+	#botaoTopo {
+		margin: 650px auto 38px auto;
+		max-width: 200px;
+		font-size: 12px;
+		padding: 15px 10px;
+	}
+
+
+
+	/* Estrutura Sobre a Rocky */
+	#sobre {
+		margin: 60px 20px 0 20px;
+    	min-width: 255px;
+	}
+
+	#fundoSobre {
+		margin-top: 30px;
+	}
+
+	#textoSobre {
+		display: none;
+	}
+
+
+	#textoSobreMobile {
+		display: inline-block;
+		max-width: 500px;
+		height: 100%;
+		margin: auto;
+		padding: 20px 20px;
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+	.espaco {
+    	padding-bottom: 15px;
+	}
+
+
+	/* Estrutura Serviços */
+	#servicos {
+		margin: 60px 20px 0 20px;
+    	min-width: 255px;
+	}
+
+	#retanduloServico {
+		margin: 30px auto;
+    	max-width: 335px;
+	}
+
+
+	#caixaServico1 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/mobile/s3_ft1.png) no-repeat center;
+	}
+
+	#caixaServico2 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/mobile/s3_ft2.png) no-repeat center;
+	}
+
+	#caixaServico3 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/mobile/s3_ft3.png) no-repeat center;
+	}
+
+	.caixaServico {
+		width: 100%;
+		height: 260px;
+		margin-top: 30px;
+	}
+
+	.caixaServico h1 {
+		font-size: 15px;
+	}
+
+	#caixaServico1 h1 {
+    	margin-top: 35px;
+	}
+
+	#caixaServico2 h1 {
+    	margin-top: 40px;
+	}
+
+	#caixaServico3 h1 {
+    	margin-top: 42px;
+	}
+
+	.textosServico1 {
+		font-size: 12px;
+		top: 75px;
+		margin: 0px 20px;
+	}
+
+
+	.textosServico2 {
+		font-size: 12px;
+    	top: 165px;
+    	margin: 0px 20px;
+	}
+
+
+	/* Estrutura Diferenciais */
+
+	#diferenciais {
+   	 	min-width: 255px;
+   	 	margin: 60px 20px 0 20px;
+	}
+
+	#retanduloDiferenciais {
+		margin: 30px auto;
+   		max-width: 335px;
+	}
+
+
+	#caixaDiferenciais1 {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/mobile/s4_ft1.png) no-repeat center;
+    background-position-y: -18px;
+	}
+
+	#caixaDiferenciais2 {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/mobile/s4_ft2.png) no-repeat center;
+    background-position-y: -18px;
+	}
+
+	#caixaDiferenciais3 {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/mobile/s4_ft3.png) no-repeat center;
+    background-position-y: -18px;
+	}
+
+	.caixaDiferenciais {
+		width: 100%;
+    	height: 330px;
+		margin-top: 30px;
+	}
+
+	.medal {
+		font-size: 5em;
+    	top: 35px;
+	}
+
+	.textoDiferenciais {
+		font-size: 10px;
+    	top: 165px;
+   	 	width: 200px;
+    	line-height: 20px;
+	}
+
+	/* Estrutura Contato */
+
+	#faixa1 {
+    	margin-top: 80px;
+	}
+
+	.faixa {
+    	height: 30px;
+	}
+	   
+	#info {
+		min-width: 255px;
+		height: 100%;
+		font-size: 12px;
+		margin: 30px 20px 0px 20px;
+	}
+
+	#logoWeb {
+		display: none;
+	}
+
+	#logoMobile {
+		display: inline-block;
+	}
+
+	#infoContato {
+		margin-top: 30px;
+		max-width: 300px;
+	}
+
+	#infoContato span {
+    	margin-left: 10px;
+	}
+
+	#localizacao {
+		margin-top: 30px;
+		max-width: 500px;
+	}
+
+	#endereco {
+		margin-left: 10px;
+		margin-top: 10px;
+		font-size: 10px;
+		max-width: 300px;
+	}
+
+
+	#textoInfo {
+   		display: none;
+	}
+
+	#textoInfoMobile {
+		min-width: 255px;
+    height: 150px;
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	}
+
+
+	#mensagem {
+		margin-bottom: 0px;
+		margin-top: 30px;
+		height: 400px;
+	}
+
+
+	#mensagem form {
+    	min-width: 255px;
+    	height: auto;
+    	margin: 30px 20px;
+	}
+
+
+	#mensagem input {
+    	width: 100%;
+    	height: 35px;
+	    font-size: 12px;
+	    padding-left: 10px;
+	    box-sizing: border-box;
+	    margin-bottom: 20px;
+	}
+
+	#mensagem textarea {
+	    width: 100%;
+	    height: 100px;
+	    font-size: 12px;
+	    padding-left: 10px;
+	    margin-bottom: 30px;
+	}
+
+
+	#botaoMensagem {
+	    height: 55px;
+	    font-size: 20px;
+	}
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+	body {
+		background: none;
+	}
+
+	h1 {
+    	font-size: 30px;
+	}
+
+
+	nav {
+		height: auto;
+	}
+
+	
+	/* Estrutura do Logo */
+	#logo a{
+		background: url(img/mobile/logo.png) no-repeat;
+	  width: 112px;
+    height: 27px;
+    margin: 20px 160px 15px 50px;
+	}
+
+
+	/* Estrutura do Menu */
+	#menu {
+		display: none;
+	}
+
+	/* Estrutura do Menu Mobile */
+
+	#btnMobile {
+		display: block;
+		margin-left: 30px;
+	}
+
+
+	/* Estrutura do Menu */
+	#tituloTopo {
+		font-size: 60px;
+		margin-top: 280px;
+		height: auto;
+		width: 520px;
+	}
+
+	#textoTopo {
+		font-size: 15px;
+		margin-top: 550px;
+	}
+
+	.quebraLinha {
+		display: inline-block;
+	}
+
+
+	/* Estrutura do Botão Entre em Contato */
+	#botaoTopo {
+		margin: 800px auto 38px auto;
+		max-width: 300px;
+		font-size: 15px;
+		padding: 20px;
+	}
+
+
+	/* Estrutura Sobre a Rocky */
+	#sobre {
+		margin: 80px 20px 0 20px;
+    	min-width: 255px;
+	}
+
+	#fundoSobre {
+		margin-top: 30px;
+	}
+
+	#textoSobre {
+		display: none;
+	}
+
+
+	#textoSobreMobile {
+		display: inline-block;
+		max-width: 767px;
+		height: 100%;
+		margin: auto;
+		padding: 20px 20px;
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+	.espaco {
+    	padding-bottom: 15px;
+	}
+
+
+	/* Estrutura Serviços */
+	#servicos {
+		margin: 80px 20px 0 20px;
+    	min-width: 255px;
+	}
+
+	#retanduloServico {
+		margin: 30px auto;
+    	max-width: 335px;
+	}
+
+
+	#caixaServico1 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/mobile/s3_ft1.png) no-repeat center;
+	}
+
+	#caixaServico2 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/mobile/s3_ft2.png) no-repeat center;
+	}
+
+	#caixaServico3 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/mobile/s3_ft3.png) no-repeat center;
+	}
+
+	.caixaServico {
+		width: 100%;
+		height: 260px;
+		margin-top: 30px;
+	}
+
+	.caixaServico h1 {
+		font-size: 15px;
+	}
+
+	#caixaServico1 h1 {
+    	margin-top: 35px;
+	}
+
+	#caixaServico2 h1 {
+    	margin-top: 40px;
+	}
+
+	#caixaServico3 h1 {
+    	margin-top: 42px;
+	}
+
+	.textosServico1 {
+		font-size: 12px;
+		top: 75px;
+		margin: 0px 20px;
+	}
+
+
+	.textosServico2 {
+		font-size: 12px;
+    	top: 165px;
+    	margin: 0px 20px;
+	}
+
+
+	/* Estrutura Diferenciais */
+
+	#diferenciais {
+   	 	min-width: 255px;
+   	 	margin: 80px 20px 0 20px;
+	}
+
+	#retanduloDiferenciais {
+		margin: 30px auto;
+   		max-width: 335px;
+	}
+
+
+	#caixaDiferenciais1 {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/mobile/s4_ft1.png) no-repeat center;
+    background-position-y: -18px;
+	}
+
+	#caixaDiferenciais2 {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/mobile/s4_ft2.png) no-repeat center;
+    background-position-y: -18px;
+	}
+
+	#caixaDiferenciais3 {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/mobile/s4_ft3.png) no-repeat center;
+    background-position-y: -18px;
+	}
+
+	.caixaDiferenciais {
+		width: 100%;
+    	height: 330px;
+		margin-top: 30px;
+	}
+
+	.medal {
+		font-size: 5em;
+    	top: 35px;
+	}
+
+	.textoDiferenciais {
+		font-size: 12px;
+    	top: 165px;
+   	 	width: 200px;
+    	line-height: 20px;
+	}
+
+	/* Estrutura Contato */
+
+	#faixa1 {
+    	margin-top: 80px;
+	}
+
+	.faixa {
+    	height: 30px;
+	}
+	   
+	#info {
+		min-width: 255px;
+		max-width: 767px;
+		height: 100%;
+		font-size: 15px;
+		margin: 30px 20px 0px 20px;
+	}
+
+	#infoContato {
+		margin-top: 30px;
+	}
+
+	#logoWeb {
+		display: none;
+	}
+
+	#logoMobile {
+		display: inline-block;
+	}
+
+	#infoContato span {
+    	margin-left: 20px;
+	}
+
+	#localizacao {
+		margin-top: 30px;
+		max-width: 767px;
+	}
+
+	#endereco {
+		margin-left: 20px;
+		margin-top: 10px;
+		font-size: 15px;
+		max-width: 767px;
+	}
+
+	#textoInfo {
+   		display: none;
+	}
+
+	#textoInfoMobile {
+		min-width: 255px;
+    	height: 150px;
+        margin-top: 30px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+	}
+
+
+	#mensagem {
+		margin-bottom: 0px;
+		margin-top: 30px;
+		height: 400px;
+		max-width: 767px;
+	}
+
+
+	#mensagem form {
+    	min-width: 255px;
+    	max-width: 767px;
+    	height: auto;
+    	margin: 30px 20px;
+	}
+
+
+	#mensagem input {
+    	width: 100%;
+    	height: 35px;
+	    font-size: 15px;
+	    padding-left: 10px;
+	    box-sizing: border-box;
+	    margin-bottom: 20px;
+	}
+
+	#mensagem textarea {
+	    width: 100%;
+	    height: 100px;
+	    font-size: 15px;
+	    padding-left: 10px;
+	    margin-bottom: 30px;
+	}
+
+
+	#botaoMensagem {
+	    height: 55px;
+	    font-size: 20px;
+	    max-width: 767px;
+	}
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+	body {
+		background: none;
+	}
+
+	h1 {
+    	font-size: 40px;
+	}
+
+	nav {
+		height: auto;
+	}
+
+
+	/* Estrutura do Logo */
+	#logo a{
+    margin: 20px 250px 15px 50px;
+	}
+
+	/* Estrutura do Menu */
+	#menu {
+		display: none;
+	}
+
+	/* Estrutura do Menu Mobile */
+
+	#btnMobile {
+		display: block;
+		margin-left: 50px;
+	}
+
+	#btnMobile .fa-2x{
+		font-size: 3em;
+	}
+
+
+	/* Estrutura do Menu */
+	#tituloTopo {
+		font-size: 80px;
+		margin-top: 240px;
+		height: auto;
+		max-width: 750px;
+	}
+
+	#textoTopo {
+		margin-top: 550px;
+	}
+
+
+
+	.quebraLinha {
+		display: inline-block;
+	}
+
+
+	/* Estrutura do Botão Entre em Contato */
+	#botaoTopo {
+		margin: 780px auto 38px auto;
+	  padding: 20px;
+	}
+
+
+
+	/* Estrutura Sobre a Rocky */
+	#sobre {
+		margin: 100px 45px 0 45px;
+    	min-width: 255px;
+	}
+
+	#fundoSobre {
+		margin-top: 50px;
+	}
+
+	#textoSobre {
+		display: none;
+	}
+
+
+	#textoSobreMobile {
+		display: inline-block;
+		max-width: 990px;
+		height: 100%;
+		margin: auto;
+		padding: 20px 20px;
+		font-size: 15px;
+		line-height: 30px;
+	}
+
+	.espaco {
+    	padding-bottom: 15px;
+	}
+
+
+	/* Estrutura Serviços */
+	#servicos {
+		margin: 100px 45px 0 45px;
+    	min-width: 255px;
+	}
+
+	#retanduloServico {
+		margin: 50px auto;
+    	max-width: 335px;
+	}
+
+
+	#caixaServico1 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/mobile/s3_ft1.png) no-repeat center;
+	}
+
+	#caixaServico2 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/mobile/s3_ft2.png) no-repeat center;
+	}
+
+	#caixaServico3 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/mobile/s3_ft3.png) no-repeat center;
+	}
+
+	.caixaServico {
+		width: 100%;
+		height: 260px;
+		margin-top: 30px;
+	}
+
+	.caixaServico h1 {
+		font-size: 15px;
+	}
+
+	#caixaServico1 h1 {
+    	margin-top: 35px;
+	}
+
+	#caixaServico2 h1 {
+    	margin-top: 40px;
+	}
+
+	#caixaServico3 h1 {
+    	margin-top: 42px;
+	}
+
+	.textosServico1 {
+		font-size: 13px;
+		top: 75px;
+		margin: 0px 20px;
+	}
+
+
+	.textosServico2 {
+		font-size: 13px;
+    	top: 165px;
+    	margin: 0px 20px;
+	}
+
+
+	/* Estrutura Diferenciais */
+
+	#diferenciais {
+   	 	min-width: 255px;
+   	 	margin: 100px 45px 0 45px;
+	}
+
+	#retanduloDiferenciais {
+		margin: 50px auto;
+   		max-width: 335px;
+	}
+
+
+	#caixaDiferenciais1 {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/mobile/s4_ft1.png) no-repeat center;
+    background-position-y: -18px;
+	}
+
+	#caixaDiferenciais2 {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/mobile/s4_ft2.png) no-repeat center;
+    background-position-y: -18px;
+	}
+
+	#caixaDiferenciais3 {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/mobile/s4_ft3.png) no-repeat center;
+    background-position-y: -18px;
+	}
+
+	.caixaDiferenciais {
+		width: 100%;
+    	height: 330px;
+		margin-top: 30px;
+	}
+
+	.medal {
+		font-size: 5em;
+    	top: 35px;
+	}
+
+	.textoDiferenciais {
+		font-size: 13px;
+    	top: 160px;
+   	 	width: 200px;
+    	line-height: 20px;
+	}
+
+	/* Estrutura Contato */
+
+	#faixa1 {
+    	margin-top: 80px;
+	}
+
+	.faixa {
+    	height: 30px;
+	}
+	   
+	#info {
+		min-width: 255px;
+		max-width: 767px;
+		height: 100%;
+		font-size: 15px;
+		margin: 30px 45px 0px 45px;
+	}
+
+	#infoContato {
+		margin-top: 30px;
+	}
+
+	#infoContato span {
+    	margin-left: 20px;
+	}
+
+	#localizacao {
+		margin-top: 30px;
+		max-width: 767px;
+	}
+
+	#endereco {
+		margin-left: 20px;
+		margin-top: 10px;
+		font-size: 15px;
+		max-width: 767px;
+	}
+
+	#textoInfo {
+   		display: none;
+	}
+
+	#textoInfoMobile {
+		min-width: 255px;
+    	height: 150px;
+        margin-top: 30px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+	}
+
+
+	#mensagem {
+		margin-bottom: 0px;
+		margin-top: 30px;
+		height: auto;
+		max-width: 991px;
+	}
+
+
+	#mensagem form {
+    	min-width: 255px;
+    	max-width: 919px;
+    	height: auto;
+    	margin: 30px 45px;
+	}
+
+
+	#mensagem input {
+    	width: 100%;
+    	height: 50px;
+	    font-size: 15px;
+	    padding-left: 10px;
+	    box-sizing: border-box;
+	    margin-bottom: 20px;
+	}
+
+	#mensagem textarea {
+	    width: 100%;
+	    height: 100px;
+	    font-size: 15px;
+	    padding-left: 10px;
+	    margin-bottom: 30px;
+	}
+
+
+	#botaoMensagem {
+	    height: 55px;
+	    font-size: 20px;
+	    max-width: 919px;
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+	body {
+		background: none;
+	}
+
+	h1 {
+    	font-size: 50px;
+	}
+
+	
+
+	/* Estrutura do topo */
+
+	#logo a {
+		margin-left: 80px;
+	}
+
+
+	#menu {
+		margin-right: 80px;
+	}
+
+	#menu a{
+		font-size: 18px;
+	}
+
+	#tituloTopo {
+		font-size: 80px;
+		margin-top: 350px;
+		height: auto;
+	}
+
+	#textoTopo {
+		margin-top: 650px;
+	}
+
+
+	.quebraLinha {
+		display: inline-block;
+	}
+
+
+	/* Estrutura do Botão Entre em Contato */
+	#botaoTopo {
+		margin: 910px auto 38px auto;
+	  padding: 30px;
+	}
+
+
+
+	/* Estrutura Sobre a Rocky */
+	#sobre {
+		margin: 120px 100px 0 100px;
+    	min-width: 255px;
+	}
+
+	#fundoSobre {
+		margin-top: 30px;
+	}
+	
+
+
+	/* Estrutura Serviços */
+	#servicos {
+		margin: 120px 100px 0 100px;
+    	min-width: 255px;
+	}
+
+	#retanduloServico {
+		margin: 30px auto;
+   
+	}
+
+
+
+	.caixaServico {
+		margin-top: 30px;
+	}
+
+
+	/* Estrutura Diferenciais */
+
+	#diferenciais {
+   	 	min-width: 255px;
+   	 	margin: 120px 100px 0 100px;
+	}
+
+	#retanduloDiferenciais {
+		margin: 30px auto;
+   		justify-content: space-around;
+	}
+
+
+
+	.caixaDiferenciais {
+		margin-top: 30px;
+	}
+
+
+	/* Estrutura Contato */
+
+	#faixa1 {
+    	margin-top: 80px;
+	}
+
+	.faixa {
+    	height: 30px;
+	}
+
+	#contato {
+		justify-content: normal;
+	}
+	   
+	#info {
+		min-width: 255px;
+		max-width: 100%;
+		height: 100%;
+		font-size: 20px;
+		margin: 30px 100px 0px 100px;
+	}
+
+	#infoContato {
+		margin-top: 30px;
+	}
+
+	#infoContato span {
+    	margin-left: 30px;
+	}
+
+	#localizacao {
+		margin-top: 50px;
+		max-width: 767px;
+	}
+
+	#endereco {
+		margin-left: 30px;
+		margin-top: 10px;
+		font-size: 20px;
+		max-width: 767px;
+	}
+
+	#textoInfo {
+   		display: none;
+	}
+
+	#textoInfoMobile {
+		min-width: 255px;
+    	height: 150px;
+        margin-top: 70px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+	}
+
+
+	#mensagem {
+		margin-bottom: 0px;
+		margin-top: 30px;
+		height: auto;
+		max-width: 100%;
+	}
+
+
+	#mensagem form {
+    	max-width: 100%;
+    	height: auto;
+    	margin: 30px 100px;
+	}
+
+
+	#mensagem input {
+    	width: 100%;
+    	height: 70px;
+	    font-size: 20px;
+	    padding-left: 10px;
+	    box-sizing: border-box;
+	    margin-bottom: 20px;
+	}
+
+	#mensagem textarea {
+	    width: 100%;
+	    font-size: 20px;
+	    padding-left: 10px;
+	    margin-bottom: 30px;
+	}
+
+
+	#botaoMensagem {
+	    height: 55px;
+	    font-size: 20px;
+	    max-width: 100%;
+	}
+}
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1919.98px) {
+	
+	body {
+		background: none;
+	}
+
+	/* Estrutura do topo */
+
+	#logo a {
+		margin-left: 100px;
+	}
+
+
+	#menu {
+		margin-right: 100px;
+	}
+
+
+	#tituloTopo {
+		font-size: 130px;
+		height: auto;
+	}
+
+
+
+	/* Estrutura Sobre a Rocky */
+
+	#sobre {
+		margin: 120px 100px 0 100px;
+    	min-width: 255px;
+	}
+
+	/* Estrutura Serviços */
+
+	#servicos {
+		margin: 120px 100px 0 100px;
+    	min-width: 255px;
+	}
+
+	.caixaServico {
+		margin-top: 30px;
+	}
+
+
+	/* Estrutura Diferenciais */
+
+	#diferenciais {
+   	 	min-width: 255px;
+   	 	margin: 120px 100px 0 100px;
+	}
+
+	.caixaDiferenciais {
+		margin-top: 30px;
+	}
+
+	#retanduloDiferenciais {
+		justify-content: space-around;
+	}
+
+	/* Estrutura Contato */
+
+
+	#textoInfo {
+		height: 450px;
+	}
+
+	#mensagem {
+		margin-bottom: 0px;
+		margin-top: 30px;
+		max-width: 550px;
+	}
+
+
+	#mensagem form {
+    	height: auto;
+    	margin: 30px;
+	}
+
+
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
